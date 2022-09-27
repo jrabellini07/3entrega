@@ -1,0 +1,66 @@
+.pie{
+    background-color: rgba(214, 214, 166, 0.5);
+    h1{
+        margin: 15px;
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+        color: black;  
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            border: 1px solid;
+            margin: 10px;
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 250px;
+                border-radius: 5px;
+                max-width: 80%;
+                object-fit: cover;  
+            }  
+        } 
+    }
+}
+.referencias{
+    color: rgb(37, 23, 1);
+    font-size: 30px;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 80vh;
+    background: url(../img/fondo3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    div{
+        border: 2px black; 
+    }
+}
+.maps{
+    background-image: linear-gradient(to right,rgb(132, 87, 4),rgb(62, 136, 6) );
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    div{
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 350px;
+            height: 300px;
+            border-radius: 5px;  
+        }  
+    }
+}

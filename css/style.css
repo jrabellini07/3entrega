@@ -1,0 +1,370 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: #2f6407;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header img {
+    width: 100px;
+    height: 100px; }
+  header nav {
+    background-color: #2f9797; }
+    header nav ul {
+      list-style: none;
+      display: flex; }
+      header nav ul li {
+        margin: 20px 20px 0 20px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          font-weight: 600;
+          transition: 2s; }
+          header nav ul li a:hover {
+            color: white;
+            text-decoration: overline; }
+
+.jardin {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../img/Sin título.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .jardin div {
+    width: 80%; }
+    .jardin div h1 {
+      color: #251701;
+      font-size: 70px;
+      font-weight: 200;
+      font-style: italic;
+      text-align: center;
+      letter-spacing: 5px; }
+      .jardin div h1 p {
+        color: rgba(26, 24, 23, 0.548);
+        font-size: 40px;
+        text-align: center; }
+
+.historia {
+  background-image: linear-gradient(to right, #3e8806, #845704);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; }
+  .historia div img {
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 15px; }
+  .historia div {
+    width: 50%;
+    text-align: center;
+    font-weight: 200;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 5px; }
+    .historia div p {
+      font-size: 25px;
+      font-weight: 150;
+      font-style: italic; }
+
+.educacion {
+  background-image: linear-gradient(to right, #845704, #3e8806);
+  color: #251701;
+  font-size: 70px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 15px; }
+  .educacion div p {
+    font-size: 30px;
+    text-align: left;
+    font-style: italic; }
+  .educacion div div div {
+    padding: 30px; }
+    .educacion div div div img {
+      width: 250px;
+      height: 350px;
+      border-radius: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+
+.galeria {
+  background-image: linear-gradient(to left, #845704, #3e8806);
+  margin-top: 15px; }
+  .galeria div div {
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 20px 10px 15px 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #f0af38;
+    transition: 2s; }
+    .galeria div div:hover {
+      transform: scale(1.1); }
+    .galeria div div img {
+      width: 250px;
+      height: 250px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+    .galeria div div h5 {
+      margin-bottom: 30px;
+      font-size: 20px; }
+      .galeria div div h5 a {
+        text-decoration: none;
+        background-color: #c38108;
+        padding: 5px;
+        color: black;
+        border-radius: 5px;
+        transition: 1s; }
+        .galeria div div h5 a:hover {
+          background-color: white;
+          color: #c38108; }
+
+.valores {
+  width: 100%;
+  background-color: rgba(214, 214, 166, 0.5); }
+  .valores h1 {
+    color: black;
+    font-size: 45px;
+    font-style: italic;
+    text-align: left;
+    letter-spacing: 10px;
+    margin-top: 20px; }
+    .valores h1 p {
+      color: black;
+      font-size: 20px;
+      text-align: left; }
+    .valores h1 div {
+      display: flex;
+      justify-content: center; }
+      .valores h1 div img {
+        width: 350px;
+        height: 300px;
+        border-radius: 5px;
+        object-fit: cover; }
+
+.compromiso {
+  width: 100%;
+  background-color: rgba(68, 68, 49, 0.5); }
+  .compromiso h2 {
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    transition: 3s; }
+    .compromiso h2:hover {
+      color: green;
+      transform: scale(1.1); }
+      .compromiso h2:hover p {
+        color: black;
+        font-style: italic;
+        font-size: 20px;
+        text-align: left; }
+
+.lugar {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 20px; }
+  .lugar div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75);
+    -webkit-box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75);
+    -moz-box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75); }
+
+.cartalector {
+  width: 100%;
+  margin-top: 15px;
+  background-color: rgba(214, 214, 166, 0.5); }
+  .cartalector h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: initial;
+    letter-spacing: 5px;
+    transition: 3s; }
+    .cartalector h1:hover {
+      color: green;
+      transform: scale(1.1); }
+      .cartalector h1:hover p {
+        color: black;
+        font-size: 25px;
+        font-weight: 150;
+        font-style: italic;
+        text-align: center; }
+
+.lectura {
+  width: 100%;
+  height: 80vh;
+  background: url(../img/fondo3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .lectura p {
+    width: 100%;
+    height: 80%;
+    color: black;
+    font-size: 30px;
+    font-weight: 150;
+    font-style: italic;
+    text-align: center; }
+
+.titulo {
+  color: #251701;
+  font-size: 30px;
+  font-weight: 250;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: rgba(207, 107, 71, 0.548);
+  margin-top: 50px; }
+
+.imagenes {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .imagenes div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75);
+    -webkit-box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75);
+    -moz-box-shadow: 14px -12px 6px -4px rgba(110, 84, 84, 0.75); }
+
+.img1 {
+  grid-row: span 2; }
+
+.img2 {
+  grid-row: span 2; }
+
+.img3 {
+  grid-row: span 2; }
+
+.videos {
+  width: 100%;
+  margin-top: 50px; }
+  .videos h2 {
+    color: #251701;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(207, 107, 71, 0.548); }
+    .videos h2 div {
+      background: url(../img/jardin13.jpg);
+      background-size: contain; }
+      .videos h2 div div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+
+.pie {
+  background-color: rgba(214, 214, 166, 0.5); }
+  .pie h1 {
+    margin: 15px;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: black; }
+  .pie div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .pie div div {
+      border: 1px solid;
+      margin: 10px;
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie div div img {
+        width: 200px;
+        height: 250px;
+        border-radius: 5px;
+        max-width: 80%;
+        object-fit: cover; }
+
+.referencias {
+  color: #251701;
+  font-size: 30px;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 5px;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/fondo3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+  .referencias div {
+    border: 2px black; }
+
+.maps {
+  background-image: linear-gradient(to right, #845704, #3e8806);
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+  .maps div {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .maps div img {
+      width: 350px;
+      height: 300px;
+      border-radius: 5px; }
+
+footer {
+  background-color: #2f6407;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px; }
+  footer img {
+    width: 70px;
+    height: 70px; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      display: inline-block;
+      margin: 20px 20px 0 20px; }
+      footer ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        transition: 2s; }
+        footer ul li a:hover {
+          transform: scale(1.1);
+          text-decoration: overline;
+          color: orangered; }
